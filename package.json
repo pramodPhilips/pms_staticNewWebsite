@@ -1,0 +1,20 @@
+{
+  "name": "pms_newWebsite",
+  "version": "1.0.0",
+  "description": "Material Design Template Page Design",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server"
+  },
+  "keywords": [
+    "pms_Website"
+  ],
+  "author": "Pramod",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
