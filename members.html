@@ -81,70 +81,181 @@
     <!-- NOTE: Main Content goes here -->
     <!-- container-fluid -->
     <div class="container-fluid main-body">
-        <h2>Members List</h2>
-        <hr>
-        <div class="row">
-
-            <div class="col-lg-8 border-left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sequi dolorum nihil, incidunt, nobis atque assumenda quaerat maiores possimus quam itaque ipsum quo tenetur molestias laborum similique praesentium pariatur blanditiis.</p>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="sticky-note sticky-note-red">
-                            <div class="text-center">
-                                <h4>Members : 40</h4>
-                                <hr>
-                                <p>Ex-members: 0</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="sticky-note sticky-note-purple">
-                            <div class="text-center">
-                                <h4>Non-Members : 40</h4>
-                                <hr>
-                                <p>Ex-members: 0</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="sticky-note sticky-note-yellow">
-                            <div class="text-center">
-                                <h4>Treatments : 40</h4>
-                                <hr>
-                                <p>Ex-members: 0</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="sticky-note sticky-note-blue">
-                            <div class="text-center">
-                                <h4>Appointment : 40</h4>
-                                <hr>
-                                <p>Ex-members: 0</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-lg-12">
+            <h1>Members list</h1>
+            <hr>
+            <!-- first-row -->
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Members</h2>
                 </div>
-                <hr>
-                <!-- end:first-row -->
-                <!-- second-row -->
-                <div class="row">
-                    <form class="search-combo-box col-lg-8" role="search">
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="search-label" for="search-member"><p>Enter Member ID:&nbsp;</p></label>
-                                <input type="text" name="search-member" class="form-control" placeholder="Enter Member ID">
+                <div class="panel-body">
+                    <!-- first-input-row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-group input-block" name="member-name" placeholder="Member" />
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-group input-block" name="first-name" placeholder="First Name" />
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-group input-block" name="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 border-left">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-group input-block" name="cell" placeholder="Cell" />
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-group input-block" name="last-name" placeholder="Last Name">
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <button type="submit" class="pull-right btn btn-primary">Submit</button>
+                    </div>
+                    <!-- end:first-input-row -->
+                    <!-- second-input-row -->
+                    <div class="row">
+                        <div class="col-lg-5 contents-centered">
+                            <button class="btn btn-primary btn-block"><span class="glyphicon glyphicon-search">&nbsp;</span>Search Members</button>
                         </div>
-                    </form>
+                    </div>
+                    <!-- end:second-input-row -->
                 </div>
-                <!-- end:second-row -->
             </div>
-            <!-- end:col-lg-8 -->
+            <!-- end:first-row -->
+            <!-- second-row -->
+            <div class="col-lg-12">
+                <!-- table-row -->
+                <div class="row">
+                    <table class="table table-striped table-hover members-details-table">
+                        <thead>
+                            <tr class="info">
+                                <th>#</th>
+                                <th>Member Details</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th class="centered-th">Details</th>
+                                <th class="centered-th">Members</th>
+                                <th class="centered-th">Treatments</th>
+                                <th class="centered-th">Images</th>
+                                <th class="centered-th">Appointment</th>
+                                <th class="centered-th">Payments</th>
+                                <th class="centered-th">Treatment Report</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>BLRFRI012350006</td>
+                                <td>Mrs. Radhakrishnan</td>
+                                <td>+91 996546772349</td>
+                                <td>shidlingmanjunath@gmail.com</td>
+                                <td><button class="btn btn-sm btn-primary view-details">View Details</button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>BLRFRI012350006</td>
+                                <td>Mrs. Radhakrishnan</td>
+                                <td>+91 996546772349</td>
+                                <td>shidlingmanjunath@gmail.com</td>
+                                <td><button class="btn btn-sm btn-primary view-details">View Details</button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>BLRFRI012350006</td>
+                                <td>Mrs. Radhakrishnan</td>
+                                <td>+91 996546772349</td>
+                                <td>shidlingmanjunath@gmail.com</td>
+                                <td><button class="btn btn-sm btn-primary view-details">View Details</button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>BLRFRI012350006</td>
+                                <td>Mrs. Radhakrishnan</td>
+                                <td>+91 996546772349</td>
+                                <td>shidlingmanjunath@gmail.com</td>
+                                <td><button class="btn btn-sm btn-primary view-details">View Details</button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>BLRFRI012350006</td>
+                                <td>Mrs. Radhakrishnan</td>
+                                <td>+91 996546772349</td>
+                                <td>shidlingmanjunath@gmail.com</td>
+                                <td><button class="btn btn-sm btn-primary view-details">View Details</button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>BLRFRI012350006</td>
+                                <td>Mrs. Radhakrishnan</td>
+                                <td>+91 996546772349</td>
+                                <td>shidlingmanjunath@gmail.com</td>
+                                <td><button class="btn btn-sm btn-primary view-details">View Details</button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
+                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end:table-row -->
+                <!-- pagination-row -->
+                <div class="row contents-centered">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+                <!-- end:pagination-row -->
+            </div>
+            <!-- end:second-row -->
         </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
     </div>
     <!-- end:container-fluid -->
     <footer class="footer">

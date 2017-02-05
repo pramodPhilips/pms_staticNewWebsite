@@ -131,6 +131,54 @@ a.navbar-brand>img {
     left: 30px;
 }
 
+.panel-title {
+    font-size: 18px;
+}
+
+.text-center{
+  /*float: none;*/
+  margin: 0 auto;
+  text-align: center;
+}
+
+table.members-details-table {
+  overflow-x: scroll;
+}
+
+table.members-details-table th.centered-th{
+  /*border: 1px solid red;*/
+  text-align: center;
+  margin: 0 auto;
+}
+
+table.members-details-table td{
+  /*border: 1px solid red;*/
+  text-align: center;
+  margin: 0 auto;
+}
+
+table.members-details-table td button{
+  width: 75px;
+  text-align: center;
+}
+
+table.members-details-table td button.view-details{
+  width: 75px;
+  text-align: center;
+  text-transform: none;
+  padding: 5px 15px 5px 4px;
+}
+
+.contents-centered{
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input.input-block{
+  width: 70%;
+}
+
 
 /*CHANGED: Side-bar styles*/
 
@@ -292,6 +340,7 @@ a.list-item>span {
 
 footer {
     position: fixed;
+    z-index: 1000;
     bottom: 0;
     color: black;
     font-size: 15px;
