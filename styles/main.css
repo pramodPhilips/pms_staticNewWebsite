@@ -18,6 +18,15 @@
 
 /*blue-theme-color: #2196F3*/
 
+/*sticky notes
+
+blue: #1E91D6; -> font: 12507F;
+dark-blue: #0072BB; -> font: 004E7F
+green: #8FC93A; -> font: 547A26
+turmeric: #E4CC37; -> font: 948424
+orange: #E18335; -> font: 7F4A1E
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 body {
@@ -396,10 +405,10 @@ footer {
 }
 
 .sticky-note h4{
+  font-size: 17px;
   padding: 0px 15px 15px;
   border-bottom: 1px solid #fff;
   display: block;
-  font-size: 19px;
   font-weight: 900;
   color:#ffffff;
 }
@@ -409,27 +418,27 @@ footer {
 }
 
 .sticky-note.sticky-note-red {
-  padding: 7px 15px;
-    background-color: #FF6A6D;
-    color: #990009;
+    padding: 7px 10px 7px 15px;
+    background-color: #0072BB;
+    color: #fff;
 }
 
 .sticky-note.sticky-note-purple {
-  padding: 7px 15px;
-    background-color: #B479E8;
-    color: #6213B0;
+    padding: 7px 10px 7px 15px;
+    background-color: #8FC93A;
+    color: #fff;
 }
 
 .sticky-note.sticky-note-yellow {
-  padding: 7px 15px;
-    background-color: #FFF25D;
-    color: #B06009;
+  padding: 7px 10px 7px 15px;
+    background-color: #CCAA27;
+    color: #fff;
 }
 
 .sticky-note.sticky-note-blue {
-  padding: 7px 15px;
-    background-color: #77B5FF;
-    color: #0954A6;
+  padding: 7px 10px 7px 15px;
+    background-color: #E18335;
+    color: #fff;
 }
 
 .centered-main-section{
