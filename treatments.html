@@ -27,7 +27,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-align-justify"></span></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="index.html">Home</a></li>
                             <li class="divider"></li>
@@ -80,12 +80,12 @@
     <!-- container-fluid -->
     <div class="container-fluid main-body">
         <div class="col-lg-12">
-            <h1>Members list</h1>
+            <h1>Treatments list</h1>
             <hr>
             <!-- first-row -->
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h2 class="panel-title">Members</h2>
+                    <h2 class="panel-title">Treatment Plans &nbsp;&nbsp;<button class="btn btn-default"><span class="glyphicon glyphicon-plus">&nbsp;</span>Add treatment</button></h2>
                 </div>
                 <div class="panel-body">
                     <!-- first-input-row -->
@@ -93,21 +93,21 @@
                         <div class="col-md-12">
                             <div class="col-md-6">
                                 <div class="col-md-12">
-                                    <input type="text" class="form-group input-block" name="member-name" placeholder="Treatment Plan:" />
+                                    <input type="text" class="form-group input-block" name="member-name" placeholder="Treatment Plan" />
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-group input-block" name="first-name" placeholder="First Name" />
+                                    <input type="text" class="form-group input-block" name="first-name" placeholder="From Date" />
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-group input-block" name="email" placeholder="Email" />
+                                    <input type="text" class="form-group input-block" name="email" placeholder="Treatment Plan Status" />
                                 </div>
                             </div>
                             <div class="col-md-6 border-left">
                                 <div class="col-md-12">
-                                    <input type="text" class="form-group input-block" name="cell" placeholder="Cell" />
+                                    <input type="text" class="form-group input-block" name="cell" placeholder="Member #" />
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-group input-block" name="last-name" placeholder="Last Name">
+                                    <input type="text" class="form-group input-block" name="last-name" placeholder="To Date">
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                     <!-- second-input-row -->
                     <div class="row">
                         <div class="col-lg-5 contents-centered">
-                            <button class="btn btn-primary btn-block"><span class="glyphicon glyphicon-search">&nbsp;</span>Search Members</button>
+                            <button class="btn btn-primary btn-block"><span class="glyphicon glyphicon-search">&nbsp;</span>Search Treatment Plans</button>
                         </div>
                     </div>
                     <!-- end:second-input-row -->
@@ -133,15 +133,15 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span> Member Details</h4>
+                                <h4 class="modal-title"><span class="glyphicon glyphicon-leaf"></span> Treatment Details</h4>
                             </div>
                             <div class="modal-body">
-                                <p><strong>BLRFRI012350006</strong>: Mrs. Radhakrishnan</p>
+                                <p><strong>TP_20170205_01</strong>: Mrs. Radhamani R.</p>
+                                <p><strong>Description:</strong> Test Plan from Member List</p>
                                 <hr>
-                                <p><strong>Date of Birth</strong>: 10/01/1980</p>
-                                <p><strong>Email</strong>: shidlingmanjunath@gmail.com</p>
-                                <p><strong>Plan</strong>: Premium Plan</p>
-                                <p><strong>Premium Expires</strong>: 30/09/2019</p>
+                                <p><strong>Patient</strong>: Mrs. Radhamani R</p>
+                                <p><strong>Status</strong>: Open</p>
+                                <p><strong>Start Date</strong>: 30/01/2017</p>
                                 <p><strong>Total Treatment Cost</strong>: INR 11111.0</p>
                                 <p><strong>Total Ins Payment</strong>: INR 200.0</p>
                                 <p><strong>Total Co Payment</strong>: INR 0.0</p>
@@ -159,107 +159,92 @@
                 <div class="row members-details-section">
                     <table class="table table-striped table-hover members-details-table">
                         <thead>
-                            <tr class="info">\
+                            <tr class="info">
                                 <th>#</th>
-                                <th>Member Details</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
+                                <th class="centered-th">Treatment Details</th>
+                                <th class="centered-th">Member</th>
+                                <th class="centered-th">Patient</th>
+                                <th class="centered-th">Status</th>
+                                <th class="centered-th">Description</th>
                                 <th class="centered-th">Details</th>
-                                <th class="centered-th">Members</th>
                                 <th class="centered-th">Treatments</th>
-                                <th class="centered-th">Images</th>
-                                <th class="centered-th">Appointment</th>
+                                <th class="centered-th">Report</th>
                                 <th class="centered-th">Payments</th>
-                                <th class="centered-th">Treatment Report</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
                                 <td>BLRFRI012350006</td>
-                                <td>Mrs. Radhakrishnan</td>
-                                <td>+91 996546772349</td>
-                                <td>shidlingmanjunath@gmail.com</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Open</td>
+                                <td>Test Plan from Member List</td>
                                 <td><button class="btn btn-sm btn-success view-details" data-toggle="modal" data-target="#members-modal">View Details</button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>BLRFRI012350006</td>
-                                <td>Mrs. Radhakrishnan</td>
-                                <td>+91 996546772349</td>
-                                <td>shidlingmanjunath@gmail.com</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Open</td>
+                                <td>Test Plan from Member List</td>
                                 <td><button class="btn btn-sm btn-success view-details" data-toggle="modal" data-target="#members-modal">View Details</button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>BLRFRI012350006</td>
-                                <td>Mrs. Radhakrishnan</td>
-                                <td>+91 996546772349</td>
-                                <td>shidlingmanjunath@gmail.com</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Open</td>
+                                <td>Test Plan from Member List</td>
                                 <td><button class="btn btn-sm btn-success view-details" data-toggle="modal" data-target="#members-modal">View Details</button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>BLRFRI012350006</td>
-                                <td>Mrs. Radhakrishnan</td>
-                                <td>+91 996546772349</td>
-                                <td>shidlingmanjunath@gmail.com</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Open</td>
+                                <td>Test Plan from Member List</td>
                                 <td><button class="btn btn-sm btn-success view-details" data-toggle="modal" data-target="#members-modal">View Details</button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>BLRFRI012350006</td>
-                                <td>Mrs. Radhakrishnan</td>
-                                <td>+91 996546772349</td>
-                                <td>shidlingmanjunath@gmail.com</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Open</td>
+                                <td>Test Plan from Member List</td>
                                 <td><button class="btn btn-sm btn-success view-details" data-toggle="modal" data-target="#members-modal">View Details</button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>BLRFRI012350006</td>
-                                <td>Mrs. Radhakrishnan</td>
-                                <td>+91 996546772349</td>
-                                <td>shidlingmanjunath@gmail.com</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Mrs. Radhamani</td>
+                                <td>Open</td>
+                                <td>Test Plan from Member List</td>
                                 <td><button class="btn btn-sm btn-success view-details" data-toggle="modal" data-target="#members-modal">View Details</button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-user"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-leaf"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-eye-open"></span></button></td>
                                 <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-calendar"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-credit-card"></span></button></td>
-                                <td><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-saved"></span></button></td>
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
