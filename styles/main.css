@@ -305,6 +305,18 @@ a.list-item>span {
     border: none;
 }
 
+section.add-treatment-modal .modal-header{
+    border-bottom-color: #EEEEEE;
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+section.add-treatment-modal .modal-footer{
+    border-top-color: #EEEEEE;
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
 .modal-header {
     border-bottom-color: #EEEEEE;
     background-color: #2196F3;
