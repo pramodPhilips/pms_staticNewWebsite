@@ -19,6 +19,7 @@
 /*blue-theme-color: #2196F3*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #E2E2E2;
@@ -383,34 +384,58 @@ footer {
 }
 
 .sticky-note {
+    font-family: 'Raleway','Roboto', sans-serif;
     margin: 20px 0px;
     padding: 2px;
     background-color: #FFE396;
-    border:1px #E8Ds47 solid;
+    border:1px #E8D47 solid;
     /* Shadow */
-    -moz-box-shadow:0px 0px 6px 1px #333333;
-    -webkit-box-shadow:0px 0px 6px 1px #333333;
-    box-shadow:0px 0px 6px 1px #333333;
+    -moz-box-shadow:inset 0px 0px 6px 1px rgba(51, 51, 51, 0.5);
+    -webkit-box-shadow:inset 0px 0px 6px 1px rgba(51, 51, 51, 0.5);
+    box-shadow:inset 0px 0px 6px 1px rgba(51, 51, 51, 0.5);
+}
+
+.sticky-note h4{
+  padding: 0px 15px 15px;
+  border-bottom: 1px solid #fff;
+  display: block;
+  font-size: 19px;
+  font-weight: 900;
+  color:#ffffff;
+}
+
+.sticky-note p{
+  font-size: 1.1em;
 }
 
 .sticky-note.sticky-note-red {
+  padding: 7px 15px;
     background-color: #FF6A6D;
     color: #990009;
 }
 
 .sticky-note.sticky-note-purple {
+  padding: 7px 15px;
     background-color: #B479E8;
     color: #6213B0;
 }
 
 .sticky-note.sticky-note-yellow {
+  padding: 7px 15px;
     background-color: #FFF25D;
     color: #B06009;
 }
 
 .sticky-note.sticky-note-blue {
+  padding: 7px 15px;
     background-color: #77B5FF;
     color: #0954A6;
+}
+
+.centered-main-section{
+  float: none;
+  text-align: center;
+  margin: 0px auto;
 }
 
 .centered-div{
